@@ -117,6 +117,18 @@ main {
   align-items: center;
   font-weight: normal;
 }
+.page-films{
+  font-weight: bold;
+  text-decoration:underline;
+}
+.top-button {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 1.0;
+}
 
 .Cards {
   width: 350px;
