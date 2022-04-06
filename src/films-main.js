@@ -1,6 +1,8 @@
-import {filterFilms, filters} from './data.js';
-
+import { filterFilms, filters } from './data.js';
+import { navHamburguer } from './nav.js';
 import data from './data/ghibli/ghibli.js';
+
+navHamburguer()
 
 const films = data.films
 
@@ -25,13 +27,13 @@ function printCards(filmes) {
      </div>
     </div>
     `
-    )
-  .join('');
+  )
+    .join('');
 }
 
 printCards(films)
 
-const searchMovie = () =>{
+const searchMovie = () => {
   const valueSelec = searchFilms.value;
   const movieSelec = filterFilms(films, valueSelec);
   printCards(movieSelec);
@@ -41,15 +43,15 @@ const searchFilms = document.querySelector("#inputSearch");
 searchFilms.addEventListener("keyup", searchMovie);
 
 
-const ordenator = (e) =>{
+const ordenator = (e) => {
   const orderSelec = e.target.value;
-  if (orderSelec !== ""){
+  if (orderSelec !== "") {
     const filterOrder = filters(films, orderSelec)
     printCards(filterOrder)
   }
 }
 const order = document.getElementById("inputOrder")
-order.addEventListener ("change", ordenator)
+order.addEventListener("change", ordenator)
 
 const orderAge = document.getElementById("inputAge")
 orderAge.addEventListener("change", ordenator)
@@ -60,6 +62,6 @@ orderScore.addEventListener("change", ordenator)
 let clear = document.querySelector('.resetButton')
 clear.addEventListener('click', resetFilter, printCards)
 
-function resetFilter(){
+function resetFilter() {
   location.reload()
 }

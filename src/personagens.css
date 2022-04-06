@@ -1,8 +1,6 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
+@import url(reset.css);
+@import url(header.css);
+
 
 body {
   background-color: #003563;
@@ -11,35 +9,6 @@ body {
   overflow-x: hidden;
   max-width: 100%;
   max-height: 100%;
-}
-
-header {
-  display: flex;
-  width: 98%;
-  height: 30%;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.list{
-  display: inline-flex;
-}
-
-.content{
-  list-style-type: none;
-  margin: 2% 15%;
-}
-
-.imglogo{
-  display: end;
-
-}
-.logo{
-  display: flex;
-  justify-content: space-evenly;
-  width: auto;
-  height: 15vh;
 }
 
 a {
@@ -73,7 +42,7 @@ a:hover {
   background-color: #95bad7;
   margin: 1vmax;
   border-radius:5px;
-  border: 0.1max solid#003563;
+  border: 0.1max solid #003563;
   border-color: #003563;
   height: 2vmax;
   font-size: 1vmax;
@@ -159,23 +128,6 @@ transform: rotateY(180deg);
 }
 
 @media screen and (max-width: 640px) {
-  header {
-    width: 100%;
-    margin-bottom: none;
-    justify-content: space-between;
-
-  }
-
-  .logo {
-    width: auto;
-    height: 10vh;
-    margin-right: 10px;
-  }
-
-  .content {
-    margin: 0% 10%;
-    max-width: 30%;
-  }
 
   .carac {
     margin: 0% 17% 0% 0%;
