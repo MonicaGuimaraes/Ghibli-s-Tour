@@ -91,6 +91,9 @@ main {
   padding:2rem;
   box-sizing: border-box;
   margin-bottom:3rem;
+  display: flex;
+  flex-direction: row;
+}
 
 .page-films{
   font-weight: bold;
