@@ -7,11 +7,11 @@ const films = data.films
 function printCards(filmes) {
   document.getElementById('cardsFilms').innerHTML = filmes.map((item) =>
     `
-  <div class="container-cards">
-    <div class="movie-poster">
+  <div class="containerCards">
+    <div class="moviePoster">
        <img src = "${item.poster}" class = "poster" alt="Imagem do poster">
     </div>
-    <div class="movie-details">
+    <div class="movieDetails">
     <div class="movieInformation">
         <h1 class= "title">${item.title} </h1>
         <h3> Year </h3> <p class="year">${item.release_date}</p>
