@@ -7,20 +7,18 @@ const films = data.films
 function printCards(filmes) {
   document.getElementById('cardsFilms').innerHTML = filmes.map((item) =>
     `
-  <div class="Cards">
-    <div class="cardFlip">
-      <div class="front">
-        <figure>
-          <img src = "${item.poster}" class = "poster">
-        </figure>
-      </div>
-      <div class="back">
-        <p class = "titles"><strong>${item.title} </strong></p><br>
-        <p class = "infoFilms"><strong>Release Date: </strong>${item.release_date}</p><br>
-        <p class = "infoFilms"><strong>Description: </strong>${item.description}</p><br>
-        <p class = "infoFilms"><strong>Director: </strong>${item.director}<p><br>
-        <p class = "infoFilms"><strong>Producer: </strong>${item.producer}<p><br>
-        <p class = "infoFilms"><strong>Score: </strong>${item.rt_score}<p><br>
+  <div class="container-cards">
+    <div class="movie-poster">
+       <img src = "${item.poster}" class = "poster" alt="Imagem do poster">
+    </div>
+    <div class="movie-details">
+    <div class="movieInformation">
+        <h1 class= "title">${item.title} </h1>
+        <h3> Year </h3> <p class="year">${item.release_date}</p>
+        <h3> Description:</h3> <p class="description"> ${item.description}</p>
+        <h3> Director: </h3> <p class= "director">${item.director}<p>
+        <h3> Producer: </h3> <p class="producer">${item.producer}<p>
+        <h3> Score: </h3> <p class= "year">${item.rt_score}<p>
       </div>
      </div>
     </div>
