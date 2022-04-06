@@ -1,6 +1,9 @@
+import { navHamburguer } from './nav.js';
 import { filterDirector, filterFilms, filters, filterFilmCharacters } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
+
+navHamburguer()
 
 const films = data.films
 

@@ -1,29 +1,16 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
+@import url(header.css);
+@import url(reset.css);
 
-body {
+.body {
   background-color: #003563;
   font-family: 'Didact Gothic';
-  color: white;
   overflow-x: hidden;
   max-width: 100%;
   max-height: 100%;
 }
 
-header {
-  display: flex;
-  width: 98%;
-  height: 30%;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-
-.modal{
-  position:fixed;
+.modal {
+  position: fixed;
   background-color: #003563;
   border: solid 1px white;
   top: 10%;
@@ -31,48 +18,20 @@ header {
   opacity: 0;
 }
 
-.modal:target{
+.modal:target {
   opacity: 1;
   pointer-events: auto;
 }
 
-.list{
+.list {
   display: inline-flex;
 }
 
-.content{
-  list-style-type: none;
-  margin: 2% 15%;
-}
-
-.imglogo{
-  display: end;
-
-}
-.logo{
-  display: flex;
-  justify-content: space-evenly;
-  width: auto;
-  height: 15vh;
-}
-
 a {
-  text-decoration: none;
-  font-weight: normal;
   font-size: 2vmax;
 }
 
-a:visited {
-  color: white;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-a:hover {
-  font-weight: bold;
-}
-
-main{
+main {
   background-color: #95bad7;
 }
 
@@ -88,34 +47,17 @@ main{
 }
 
 @media screen and (max-width: 640px) {
-  header{
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 2%;
-  }
-
-  .logo{
-    width: 35vw;
-    height: auto;
-    margin-right: 10px;
-  }
-
-  .content{
-    margin: 0% 10%;
-    max-width: 30%;
-  }
-
-  .carac{
+  .carac {
     margin: 0% 17% 0% 0%;
   }
 
-  main{
+  main {
     height: auto;
     width: 100vw;
     justify-content: center;
   }
 
-  .imagemChihiro{
+  .imagemChihiro {
     margin: auto;
     width: 100vw;
     height: auto;
