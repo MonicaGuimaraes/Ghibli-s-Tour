@@ -23,6 +23,11 @@ header {
 }
 
 .modal{
+  position:fixed;
+  background-color: #003563;
+  border: solid 1px white;
+  top: 10%;
+  padding: 10px;
   opacity: 0;
 }
 
