@@ -9,33 +9,7 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
 </head>
 
-<body>
-  <header>
-    <nav>
-      <ul class="list">
-        <li class="content">
-          <a id="films" href="films.html">
-            Films
-          </a>
-        </li>
-        <li class="content carac">
-          <a id="characters"><a href="personagens.html">
-              Characters</a>
-          </a>
-        </li>
-        <li class="content">
-          <a id="about" href="about.html">
-            About
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <figure class="imglogo">
-      <a href="./index.html" >
-        <img src="img/logo.png" alt="image host" class="logo">
-      </a>
-    </figure>
-  </header>
+<body class="body">
   <main class="mainFilms">
     <input type="search" placeholder="Search" class="filterFilms inputFilms" id="inputSearch">
     <select name="filtroFilms" class="filterFilms" id="inputOrder">
@@ -52,16 +26,28 @@
       <option value="score">Score</option>
       <option value="lower" id="optionLower">Lower</option>
       <option value="higher" id="optionHigher">Higher</option>
-
     </select>
+    <select name="filterDirectors" class="filterDirectors" id="inputDirector">
+      <option value="director">Director</option>
+      <option value="Gorō Miyazaki" id="gorōMiyazaki">Gorō Miyazaki</option>
+      <option value="Hayao Miyazaki" id="hayaoMiyazaki">Hayao Miyazaki</option>
+      <option value="Hiromasa Yonebayashi" id="hiromasaYonebayashi">Hiromasa Yonebayashi</option>
+      <option value="Hiroyuki Morita" id="hiroyukiMorita">Hiroyuki Morita</option>
+      <option value="Isao Takahata" id="isaoTakahata">Isao Takahata</option>
+      <option value="Yoshifumi Kondō" id="yoshifumiKondō">Yoshifumi Kondō</option>
+    </select>
+
+
     <button type="reset" class="resetButton" id="clearButton">Clear</button>
-  
+
     <section class="cardsFilms" id="cardsFilms">
     </section>
+    <a href="#top">
+      <img src="img/VOLTAR_AO_TOPO (2).png" class="top-button" alt="Button-Top" />
+    </a>
   </main>
+  <script src="./films-main.js" type="module"></script>
 
-
-  <script src="films-main.js" type="module"></script>
 </body>
 
 </html>

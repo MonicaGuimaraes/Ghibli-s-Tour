@@ -1,6 +1,9 @@
-import {filterFilms, filters} from './data.js';
+import { navHamburguer } from './nav.js';
+import { filterDirector, filterFilms, filters, filterFilmCharacters } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
+
+navHamburguer()
 
 const films = data.films
 
@@ -23,13 +26,13 @@ function printCards(filmes) {
      </div>
     </div>
     `
-    )
-  .join('');
+  )
+    .join('');
 }
 
 printCards(films)
 
-const searchMovie = () =>{
+const searchMovie = () => {
   const valueSelec = searchFilms.value;
   const movieSelec = filterFilms(films, valueSelec);
   printCards(movieSelec);
@@ -39,15 +42,15 @@ const searchFilms = document.querySelector("#inputSearch");
 searchFilms.addEventListener("keyup", searchMovie);
 
 
-const ordenator = (e) =>{
+const ordenator = (e) => {
   const orderSelec = e.target.value;
-  if (orderSelec !== ""){
+  if (orderSelec !== "") {
     const filterOrder = filters(films, orderSelec)
     printCards(filterOrder)
   }
 }
 const order = document.getElementById("inputOrder")
-order.addEventListener ("change", ordenator)
+order.addEventListener("change", ordenator)
 
 const orderAge = document.getElementById("inputAge")
 orderAge.addEventListener("change", ordenator)
@@ -55,9 +58,23 @@ orderAge.addEventListener("change", ordenator)
 const orderScore = document.getElementById("inputScore")
 orderScore.addEventListener("change", ordenator)
 
+const directorSelected = document.getElementById("inputDirector")
+directorSelected.addEventListener("change", (event) => {
+  const resultDirector = filterDirector(films, event.target.value)
+  printCards(resultDirector)
+})
+
+const filmsCharacters = document.getElementById("inputCharactersFilm")
+console.log(filmsCharacters)
+filmsCharacters.addEventListener("change", (event) => {
+  console.log("vai!!")
+  const resultCharactersFilms = filterFilmCharacters(films, event.target.value)
+  printCards(resultCharactersFilms)
+})
+
 let clear = document.querySelector('.resetButton')
 clear.addEventListener('click', resetFilter, printCards)
 
-function resetFilter(){
+function resetFilter() {
   location.reload()
 }
