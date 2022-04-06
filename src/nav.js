@@ -9,7 +9,7 @@ export function navHamburguer() {
         <img alt="Ghibli's Tour" src="./img/GHIBLI_S_TOUR-removebg-preview.png" class="imgHeader">
       </a>
     </div>
-    <nav id="nav-options" class="navOptions" aria-expanded="false">
+    <nav id="navOptions" class="navOptions" aria-expanded="false">
       <button id="btnMobile" class="btnMobile">
         <span id="hamburguer" class="hamburguer"></span>
       </button>
@@ -38,7 +38,7 @@ export function navHamburguer() {
   const btnMobile = document.getElementById('btnMobile')
 
   function toggleMenu() {
-    const nav = document.getElementById('nav-options')
+    const nav = document.getElementById('navOptions')
     nav.classList.toggle('active')
   }
 
