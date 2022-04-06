@@ -122,6 +122,39 @@ main {
   padding:2rem;
   box-sizing: border-box;
   margin-bottom:3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.page-films{
+  font-weight: bold;
+  text-decoration:underline;
+}
+.top-button {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 1.0;
+}
+
+.Cards {
+  width: 350px;
+  height: 450px;
+  box-shadow: #003563 0 0 1em;
+  background-color: #003563;
+  margin: 2% 5% 5% 2%;
+  border-radius: 2%;
+  perspective: 1000px;
+}
+
+.cardFlip {
+  height: 350px;
+  height: 450px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  position: relative;
   border-radius: 10px;
   display:flex;
   width:100%;
