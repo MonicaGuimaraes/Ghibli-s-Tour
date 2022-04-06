@@ -15,17 +15,17 @@ export function navHamburguer() {
       </button>
       <ul id="menu" class="menu">
         <li>
-          <a href="index.html" class="link" target="_blank">
+          <a href="index.html" class="link">
             Home
           </a>
         </li>
         <li>
-          <a href="films.html" class="link" target="_blank">
+          <a href="films.html" class="link">
             Films
           </a>
         </li>
         <li>
-          <a href="personagens.html" class="link" target="_blank">
+          <a href="personagens.html" class="link">
             Characters
           </a>
         </li>
