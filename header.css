@@ -1,12 +1,12 @@
 .headerMenu {
   height: 90px;
-  background: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1%;
-  box-shadow: 1px 10px 10px var(--black);
+  box-shadow: 0 0 1em var(--black);
   background: var(--main);
+  margin-bottom:  20px;
 }
 
 .logoImage {

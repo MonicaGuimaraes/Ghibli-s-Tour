@@ -6,7 +6,7 @@
   overflow-x: hidden;
   width: 100%;
   height: 100%;
-  background: var(--main);
+  background:var(--white);
 }
 
 .page-index {
@@ -307,6 +307,11 @@ h1 {
       left: 0px
     }
   }
+
+  footer a{
+    font-size: .8rem;
+    margin-bottom: 2%;
+  }
 }
 
 hr {
@@ -325,10 +330,10 @@ hr {
 
 footer {
   display: flex;
-  background-color: var(--footer);
+  background-image: linear-gradient(to bottom, #C3DBC2, #edf5ed);
   text-align: center;
   font-size: 1.2vmax;
   justify-content: center;
-  height: 3%;
+  height: 5vh;
   align-items: flex-end;
 }

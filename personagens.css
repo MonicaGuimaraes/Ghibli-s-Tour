@@ -106,7 +106,16 @@
   }
 
   .nomePersonagem {
-    font-size: 1.5vmax;
+    font-size: 1.2rem;
+  }
+
+  .filterCharacters{
+    font-size: 0.7em;
+    height: 4vmax;
+  }
+
+  .filterCharacters::placeholder{
+    font-size: 0.7rem;
   }
 
 }
