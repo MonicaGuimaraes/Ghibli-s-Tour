@@ -6,29 +6,27 @@ import data from './data/ghibli/ghibli.js';
 navHamburguer()
 
 const peopleImage = document.getElementById('cardsCharacters');
-function showCharacter(arrPeople) {
-  peopleImage.innerHTML = arrPeople.map((item) =>
-    `
+  function showCharacter(arrPeople) {
+    peopleImage.innerHTML = arrPeople.map((item) =>
+      item.people.map((carac)=>`
     <div class="card">
-      <div class="flip-card">
-      <div class="frontCard">
-      <img src= "${item.img}" class="characterPoster">
+      <img src= "${carac.img}" class="characterPoster">
+      <p class= "nomePersonagem"><strong>${carac.name}</strong><br></p>
+      <p class= "caracPersona"><strong>Age: </strong> ${carac.age}</p><br>
+      <p class= "caracPersona"><strong>Specie: </strong> ${carac.specie}</p><br>
+      <p class= "caracPersona"><strong>Gender: </strong> ${carac.gender}</p><br>
+      <p class= "caracPersona"><Strong>Film: </strong>${item.title}</p>
       </div>
-      <div class="backCard">
-      <p class= "nomePersonagem"><strong>Name: </strong>${item.name}</p><br>
-      <p class= "caracPersona"><strong>Age: </strong> ${item.age}</p><br>
-      <p class= "caracPersona"><strong>Specie: </strong> ${item.specie}</p><br>
-      <p class= "caracPersona"><strong>Gender: </strong> ${item.gender}</p><br>
-      </div>
-      </div>
-    </div>
-`).join('');
+`).join('') )
 }
-const characters = data.films.map(arrPeople => arrPeople.people)
-const arrCharacters = [].concat.apply([], characters);
 
-showCharacter(arrCharacters);
-const namePerson = document.getElementById('searchCharac');
+const films = data.films
+
+showCharacter(films);
+
+const namePerson= document.getElementById('searchCharac');
+
+
 
 const filterName = () => {
   const typeName = namePerson.value

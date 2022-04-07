@@ -10,18 +10,6 @@
   max-height: 100%;
 }
 
-a {
-  font-size: 2vmax;
-}
-
-a:visited {
-  font-weight: normal;
-}
-
-a:hover {
-  font-weight: bold;
-}
-
 .mainPersonagens {
   display: flex;
   margin: auto;
@@ -64,75 +52,31 @@ a:hover {
   height: 100%;
 }
 
-.page-characters {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-.top-button {
-  position: fixed;
-  width: 150px;
-  height: 150px;
-  bottom: 0px;
-  right: 0px;
-  opacity: 1.0;
-}
-
-
-.card {
-  width: 250px;
-  height: 275px;
-  box-shadow: #003563 0 0 1em;
+.card{
+  width:250px;
+  height: 405px;
+  box-shadow:#003563 0 0 1em;
   background-color: #003563;
   margin: 2% 5% 5% 2%;
   perspective: 1000px;
-}
-
-.flip-card {
-  width: 250px;
-  height: 275px;
-  transform-style: preserve-3d;
-  transition: transform 0.8s;
-  position: relative;
   border-radius: 2%;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  text-align: center;
+  color: white;
 }
 
-.flip-card:hover {
-  transform: rotateY(180deg);
-}
-
-.frontCard,
-.backCard {
-  backface-visibility: hidden;
-  position: absolute;
-  color: #95bad7;
-  width: 250px;
-  height: 275px;
-}
-
-.backCard {
-  transform: rotateY(180deg);
-  background-color: #003563;
-  border-radius: 10px;
-  color: #bcd0df;
-  width: 250px;
-  height: 275px;
-  font-size: 20px;
-}
-
-.characterPoster {
-  width: 250px;
-  height: 275px;
+.characterPoster{
+  margin-top: 2%;
+  width: 200px;
+  height: 175px;
   border-radius: 2%;
-
+  border: #95bad7 solid 1px;
 }
-
-.nomePersonagem {
-  padding-top: 2%;
-  font-size: 1.5vmax;
+.nomePersonagem{
+  margin: 2% 0% 5% 0%;
+  font-size: 1.1vmax;
+  text-align: center;
 }
 
 .caracPersona {
@@ -144,6 +88,10 @@ a:hover {
   .carac {
     margin: 0% 17% 0% 0%;
 
+  }
+
+  .nomePersonagem{
+    font-size: 1.5vmax;
   }
 
 }

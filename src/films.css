@@ -10,22 +10,6 @@
   max-height: 100%;
 }
 
-a {
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 2vmax;
-}
-
-a:visited {
-  color: white;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-a:hover {
-  font-weight: bold;
-}
-
 main {
   display: flex;
   background-color: #95bad7;
