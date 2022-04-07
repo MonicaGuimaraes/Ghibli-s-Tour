@@ -1,17 +1,17 @@
-:root{
-  --pokedex: #D63025;
-  --cards: #C4C4C4;
+:root {
+  --header: #D63025;
+  --back: #C4C4C4;
   --shadow: rgba(0, 0, 0, 0.527);
-  --line: rgba(0, 0, 0, .05);
+  --font: rgba(0, 0, 0, .05);
   --pattern: rgba(94, 92, 90, 0.397);
   --lighteffect: #FFCC00;
-  --shadowred: #d20000;
+  --shadowcolor: #d20000;
   --black: black;
   --white: white;
   --snow: snow;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   border: none;

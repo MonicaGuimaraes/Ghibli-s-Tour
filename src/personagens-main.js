@@ -1,5 +1,5 @@
 import { navHamburguer } from './nav.js';
-import { searchCharacter, filterAlfa }
+import { searchCharacter, filterAlfa, filterFilmCharacters }
   from './data.js';
 import data from './data/ghibli/ghibli.js';
 
@@ -8,26 +8,24 @@ navHamburguer()
 const peopleImage = document.getElementById('cardsCharacters');
 function showCharacter(arrPeople) {
   peopleImage.innerHTML = arrPeople.map((item) =>
-    `
+    item.people.map((carac) => `
     <div class="card">
-      <div class="flip-card">
-      <div class="frontCard">
-      <img src= "${item.img}" class="characterPoster">
+      <img src= "${carac.img}" class="characterPoster">
+      <p class= "nomePersonagem"><strong>${carac.name}</strong><br></p>
+      <p class= "caracPersona"><strong>Age: </strong> ${carac.age}</p><br>
+      <p class= "caracPersona"><strong>Specie: </strong> ${carac.specie}</p><br>
+      <p class= "caracPersona"><strong>Gender: </strong> ${carac.gender}</p><br>
+      <p class= "caracPersona"><Strong>Film: </strong>${item.title}</p>
       </div>
-      <div class="backCard">
-      <p class= "nomePersonagem"><strong>Name: </strong>${item.name}</p><br>
-      <p class= "caracPersona"><strong>Age: </strong> ${item.age}</p><br>
-      <p class= "caracPersona"><strong>Specie: </strong> ${item.specie}</p><br>
-      <p class= "caracPersona"><strong>Gender: </strong> ${item.gender}</p><br>
-      </div>
-      </div>
-    </div>
-`).join('');
+`).join(''))
 }
+
 const characters = data.films.map(arrPeople => arrPeople.people)
 const arrCharacters = [].concat.apply([], characters);
+const films = data.films
 
-showCharacter(arrCharacters);
+showCharacter(films);
+
 const namePerson = document.getElementById('searchCharac');
 
 const filterName = () => {
@@ -37,7 +35,6 @@ const filterName = () => {
 };
 namePerson.addEventListener('keyup', filterName);
 
-
 //ordem alfabética
 const orderFilter = (a) => {
   const orderSelec = a.target.value;
@@ -46,9 +43,11 @@ const orderFilter = (a) => {
     showCharacter(filterOrder)
   }
 }
-
 const order = document.getElementById("selecOrder")
 order.addEventListener("change", orderFilter)
 
-
-
+const filmsCharacters = document.getElementById("inputCharactersFilm")
+filmsCharacters.addEventListener("change", (event) => {
+  const resultCharactersFilms = filterFilmCharacters(films, event.target.value)
+  showCharacter(resultCharactersFilms)
+})

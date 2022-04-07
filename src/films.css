@@ -9,10 +9,6 @@
   max-height: 100%;
 }
 
-a {
-  font-size: 2vmax;
-}
-
 a:visited {
   font-weight: normal;
 }
