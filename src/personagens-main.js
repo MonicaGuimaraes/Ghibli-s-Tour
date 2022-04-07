@@ -6,30 +6,33 @@ import data from './data/ghibli/ghibli.js';
 navHamburguer()
 
 const peopleImage = document.getElementById('cardsCharacters');
-  function showCharacter(arrPeople) {
-    peopleImage.innerHTML = arrPeople.map((item) =>
-      item.people.map((carac)=>`
+function showCharacter(arrPeople) {
+  peopleImage.innerHTML = arrPeople.map((item) =>
+    `
     <div class="card">
-      <img src= "${carac.img}" class="characterPoster">
-      <p class= "nomePersonagem"><strong>${carac.name}</strong><br></p>
-      <p class= "caracPersona"><strong>Age: </strong> ${carac.age}</p><br>
-      <p class= "caracPersona"><strong>Specie: </strong> ${carac.specie}</p><br>
-      <p class= "caracPersona"><strong>Gender: </strong> ${carac.gender}</p><br>
+      <img src= "${item.img}" class="characterPoster">
+      <p class= "nomePersonagem"><strong>${item.name}</strong><br></p>
+      <p class= "caracPersona"><strong>Age: </strong> ${item.age}</p><br>
+      <p class= "caracPersona"><strong>Specie: </strong> ${item.specie}</p><br>
+      <p class= "caracPersona"><strong>Gender: </strong> ${item.gender}</p><br>
       <p class= "caracPersona"><Strong>Film: </strong>${item.title}</p>
       </div>
-`).join('') )
+`).join('')
 }
-
-const characters = data.films.map(arrPeople => arrPeople.people)
 const films = data.films
+const characters = data.films.map(arrPeople => {
+  arrPeople.people.forEach(element => element['title'] = arrPeople.title)
+  return arrPeople.people
+})
+
 const arrCharacters = [].concat.apply([], characters);
-const films = data.films
+showCharacter(arrCharacters);
 
-showCharacter(films);
-
-const namePerson= document.getElementById('searchCharac');
+const namePerson = document.getElementById('searchCharac');
 
 const filterName = () => {
+  order.value = 'order'
+  filmsCharacters.value = 'filmsCharacters'
   const typeName = namePerson.value
   const selectedCharacter = searchCharacter(arrCharacters, typeName);
   showCharacter(selectedCharacter);
@@ -40,16 +43,26 @@ namePerson.addEventListener('keyup', filterName);
 const orderFilter = (a) => {
   const orderSelec = a.target.value;
   if (orderSelec !== "") {
-    const filterOrder = filterAlfa(arrCharacters, orderSelec)
-    showCharacter(filterOrder)
+    if (filmsCharacters.value !== 'filmsCharacters') {
+      const filterOrder = filterAlfa(resultCharactersFilms, orderSelec)
+      showCharacter(filterOrder)
+    } else {
+      const filterOrder = filterAlfa(arrCharacters, orderSelec)
+      showCharacter(filterOrder)
+    }
   }
 }
-
-const filmsCharacters = document.getElementById("inputCharactersFilm")
-filmsCharacters.addEventListener("change", (event) => {
-  const resultCharactersFilms = filterFilmCharacters(films, event.target.value)
-  showCharacter(resultCharactersFilms)
-})
-
 const order = document.getElementById("selecOrder")
 order.addEventListener("change", orderFilter)
+
+let resultCharactersFilms = []
+const filmsCharacters = document.getElementById("inputCharactersFilm")
+filmsCharacters.addEventListener("change", (event) => {
+  resultCharactersFilms = []
+  if (filmsCharacters.value !== "filmsCharacters") {
+    resultCharactersFilms = filterFilmCharacters(films, event.target.value)
+    showCharacter(resultCharactersFilms)
+  } else {
+    showCharacter(arrCharacters)
+  }
+})

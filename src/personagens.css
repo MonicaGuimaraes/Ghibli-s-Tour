@@ -10,6 +10,11 @@
   max-height: 100%;
 }
 
+.page-characters {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .mainPersonagens {
   display: flex;
   margin: auto;
@@ -52,10 +57,10 @@
   height: 100%;
 }
 
-.card{
-  width:250px;
+.card {
+  width: 250px;
   height: 405px;
-  box-shadow:#003563 0 0 1em;
+  box-shadow: #003563 0 0 1em;
   background-color: #003563;
   margin: 2% 5% 5% 2%;
   perspective: 1000px;
@@ -66,14 +71,15 @@
   color: white;
 }
 
-.characterPoster{
+.characterPoster {
   margin-top: 2%;
   width: 200px;
   height: 175px;
   border-radius: 2%;
   border: #95bad7 solid 1px;
 }
-.nomePersonagem{
+
+.nomePersonagem {
   margin: 2% 0% 5% 0%;
   font-size: 1.1vmax;
   text-align: center;
@@ -82,6 +88,16 @@
 .caracPersona {
   padding: 0% 2%;
 }
+
+.top-button {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 1.0;
+}
+
 .top-button {
   position: fixed;
   width: 150px;
@@ -98,7 +114,7 @@
 
   }
 
-  .nomePersonagem{
+  .nomePersonagem {
     font-size: 1.5vmax;
   }
 
