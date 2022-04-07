@@ -30,17 +30,17 @@ export const filters = (films, orderSelec) => {
 }
 
 //busca por nome
-export const searchCharacter = (character, characterSelected) =>
-character.filter(item => item.name.toUpperCase().includes(characterSelected.toUpperCase()));
+export const searchCharacter = (films, characterSelected) =>
+films.filter(carac => carac.name.toUpperCase().includes(characterSelected.toUpperCase()));
 
 
 //ordem alfabética
-export const filterAlfa = (arrCharacters, orderSelec) => {
+export const filterAlfa = (films, orderSelec) => {
   if (orderSelec === "a-z"){
-    return arrCharacters.sort((a,b) => a.name > b.name ? 1 : -1)
+    return films.sort((a,b) => a.name > b.name ? 1 : -1)
   }
 
   if (orderSelec === "z-a"){
-    return arrCharacters.sort((a,b) => a.name > b.name ? -1 : 1)
+    return films.sort((a,b) => a.name > b.name ? -1 : 1)
   }
 }
