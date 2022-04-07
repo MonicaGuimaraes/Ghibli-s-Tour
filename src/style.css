@@ -6,12 +6,12 @@
   overflow-x: hidden;
   width: 100%;
   height: 100vh;
-  background: #C3DBC2;
+  background: var(--main);
 }
 
 .modal {
   position: fixed;
-  background-color: #C3DBC2;
+  background-color: var(--footer);
   border: solid 1px white;
   top: 10%;
   padding: 10px;
@@ -30,7 +30,7 @@ main{
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: white;
+  background: var(--white);
   height: 85vh;
 }
 .carrosel{
@@ -191,7 +191,7 @@ footer a {
 
 footer {
   display: flex;
-  background-color: #C3DBC2;
+  background-color: var(--footer);
   text-align: center;
   font-size: 1.2vmax;
   justify-content: center;
