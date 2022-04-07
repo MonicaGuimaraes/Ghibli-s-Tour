@@ -45,21 +45,20 @@ export const filterAlfa = (arrCharacters, orderSelec) => {
   }
 }
 
-
 //busca por diretor
 export const filterDirector = (films, directorSelected) => {
   return films.filter(film => film.director === directorSelected)
-
 };
 
 //personagens por filmes
 export const filterFilmCharacters = (films, filmSelected) => {
-  console.log("Oie")
-  return films.filter(film => {
-    film.title === filmSelected
-    console.log(film.people)
-    return film.people
-  }
-  )
-
+  const result = films.reduce((acumulador, film) => {
+    if (film.title === filmSelected) {
+      acumulador = acumulador.concat(film.people)
+    }
+    return acumulador;
+  }, [])
+  return result
 };
+
+
