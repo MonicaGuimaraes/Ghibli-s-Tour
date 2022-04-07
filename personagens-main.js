@@ -52,6 +52,7 @@ const orderFilter = (a) => {
     }
   }
 }
+
 const order = document.getElementById("selecOrder")
 order.addEventListener("change", orderFilter)
 
