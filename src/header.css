@@ -6,6 +6,7 @@
   justify-content: space-between;
   padding: 1%;
   box-shadow: 1px 10px 10px var(--black);
+  background: #C3DBC2;
 }
 
 .logoImage {
@@ -29,6 +30,7 @@
 }
 
 .link {
+  font-size: 1.5rem;
   color: var(--black);
 }
 
