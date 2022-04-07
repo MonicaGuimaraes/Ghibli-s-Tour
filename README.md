@@ -1,63 +1,65 @@
-# Studio Ghibli-Data Lovers
+# Ghibli`s Tour
 
 ## Índice
 
 - [1. O que é o projeto?](#1-o-que-é-o-projeto-?)
 - [2. História de usuário](#2-história-de-usuário)
 - [3. Protótipos da página](#3-protótipos-da-página)
-- [4. Critérios de aceitação do projeto](#4-critérios-de-aceitação-projeto)
-- [5. Desenvolvedoras](#5-desenvolvedoras)
+- [5. Desenvolvedoras](#4-desenvolvedoras)
 
 ---
 
 ## 1. O que é o projeto?
 
-Este é o segundo projeto proposto pelo Bootcamp Laboratória geração 007. A partir de um banco de dados que
-contém informações sobre o Studio Ghibli, o foco desta página web é facilitar a obtenção de informações que o usuário necessite, como por exemplo: pesquisar por nomes de filmes, nomes de pesonagems e organizar por ordem alfabética.
-O Studio Ghibli, é conhecido mundialmente por conta da qualidade de seus filmes de animação. Esta página proporciona ao usuário detalhes sobre os filmes e personagens, além de conter uma espaço dedicado a história do Studio Ghibli. Aproveite!
+Projeto refatorado pelo Squad 4, durante uma semana, para apresentação na Demo Day.
+Ghibli`s Tour é uma proposta que transforma dados em informações interativas e acessíveis, dando a possibilidade aos fãs ou curiosos fazerem um tour completo na galeria de filmes do Studio Ghibli por meio da aplicação web. Os usuários podem conferir os filmes, os personagens e suas características por meio dos filtros existentes na aplicação.
+
+Aproveite esta viagem pelo Studio Ghibli!
+
+Este é o projeto na versão anterior:
+
+<img src = src/img/imgReadme/projeto_anterior.gif/>
 
 
-## 2. História de usuário
+<br>
 
-Este espaço é dedicado ao entendimento de quem será o usuário final. Utilizamos algumas perguntas chave, para assim definir qual o propósito da página web e utilizar as respostas como  guia  para o desenho dos protótipos de baixa e alta fidelidade.
+## 2. Histórias de usuários
 
-<img src= "./imgReadme/historia.png" width= "600"/>
+Foram realizadas pesquisas com o público-alvo da nossa aplicação. Com base nas informações extraídas, definimos as histórias de usuários.
 
+
+<img src= "src\img\imgReadme\historias_usuarios.png"/>
+
+
+<br>
 
 ## 3. Protótipos da página
 
-Prótotipo de baixa fidelidade:
+**Prótotipo de baixa fidelidade:**
 
-<img src= "./imgReadme/prototipobaixa.jpeg" width="600"/>
+<img src= "src\img\imgReadme\prototipo_baixa.jpeg"/>
 
-Protótipo de alta fidelidade:
+**Protótipo de alta fidelidade:**
 
-<img src= "./imgReadme/prototipoalta.png" width="600"/>
+Página Inicial
 
-Paleta de cores utilizada:
+<img src= src\img\imgReadme\desktop_prototipo.png width="600"/>
 
-<img src= "./imgReadme/paleta.png" width="600"/>
+Página de Filmes
+
+<img src= src\img\imgReadme\films_prototipo.png width="600"/>
+
+<br>
+
+## 4. Desenvolvedoras
+
+Este projeto foi desenvolvido por:
+<br>
+[Bruna de Paula](https://github.com/Brulibra)<br>
+[Elizenai Silva](https://github.com/elizenai)<br>
+[Gabriela Medrado](https://github.com/GabrielaMedrado)<br>
+[Mônica Guimarães](https://github.com/MonicaGuimaraes)<br>
+[Suelen Escorcio](https://github.com/suelenescorcio)<br>
+[Thamara Bortolin](https://github.com/ThamaraBortolin)<br>
 
 
-## 4. Critérios de aceitação do projeto
-
-Definição de produto;
-História de usuário;
-Protótipo de alta e baixa fidelidade;
-Testes de usabilidade;
-Implementação da interface de usuário (HTML/CSS/JS);
-Testes unitários.
-
-No mínimo, a implementação deverá:
-
-1. Mostrar os dados em uma interface: pode ser em cards, tabelas, listas, etc.
-2. Permitir ao usuário interagir com a interface para obter as informações que
-   necessita;
-3. Ser _responsiva_, ou seja, deve ser visualizada sem problemas a partir de
-   diversos tamanhos de tela: celulares, tablets, notebooks, etc.
-4. Que a interface siga os fundamentos de _visual design_.
-
-## 5. Desenvolvedoras
-
-Este projeto foi desenvolvido por Thâmara Bortolin e Wayra Arendartchuk Castro, alunas da sétima geração do BootCamp Laboratória/BR.
-# SAAP-Ghibli-s-Tour

@@ -158,13 +158,25 @@ main {
 }
 
 @media screen and (max-width: 640px) {
-  .carac {
-    margin: 0% 17% 0% 0%;
+  .cardsFilms{
+    margin: 40px;
+  }
+  .containerCards {
+    padding: 40px;
+    margin-bottom: 40px;
+    flex-direction: column;
+  }
+  .movieDetails {
+    padding-left: 0;
+    width: 400px;
   }
 
   .poster {
-    width: 70vw;
-    height: 45vh;
+    position: relative;
+    left: 50px;
+  }
+  .carac {
+    margin: 0% 17% 0% 0%;
   }
 
   .back {
