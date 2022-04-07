@@ -82,6 +82,14 @@
 .caracPersona {
   padding: 0% 2%;
 }
+.top-button {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 1.0;
+}
 
 @media screen and (max-width: 640px) {
 
