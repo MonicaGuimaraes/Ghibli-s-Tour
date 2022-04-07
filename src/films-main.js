@@ -1,6 +1,5 @@
 import { navHamburguer } from './nav.js';
 import { filterDirector, filterFilms, filters } from './data.js';
-
 import data from './data/ghibli/ghibli.js';
 
 navHamburguer()
@@ -68,7 +67,6 @@ directorSelected.addEventListener("change", (event) => {
   orderScore.selectedIndex = 0;
   printCards(resultDirector)
 })
-
 
 let clear = document.querySelector('.resetButton')
 clear.addEventListener('click', resetFilter, printCards)
