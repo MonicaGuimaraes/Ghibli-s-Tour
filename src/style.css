@@ -11,7 +11,7 @@
 
 .page-index {
   font-weight: bold;
-  text-decoration: underlin
+  text-decoration: underline;
 }
 
 .modal {
@@ -315,8 +315,7 @@ hr {
   background-color: transparent;
 }
 
-footer a {
-  text-decoration: none;
+.footerText {
   color: black;
 }
 

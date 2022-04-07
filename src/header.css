@@ -50,7 +50,7 @@
     width: 50vh;
     top: 80px;
     right: 0;
-    background: var(--white);
+    background: var(--main);
     box-shadow: -2rem 2rem 2rem var(--shadow);
     transition: .6s;
     height: 0px;
@@ -60,9 +60,10 @@
   }
 
   .menu .link {
+    text-align: right;
     padding: 1rem 0;
     margin: 0 1rem;
-    border-bottom: 2px solid var(--line);
+    border-bottom: 2px solid var(--pattern);
   }
 
   .btnMobile {
