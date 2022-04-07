@@ -31,6 +31,8 @@ showCharacter(arrCharacters);
 const namePerson = document.getElementById('searchCharac');
 
 const filterName = () => {
+  order.value = 'order'
+  filmsCharacters.value = 'filmsCharacters'
   const typeName = namePerson.value
   const selectedCharacter = searchCharacter(arrCharacters, typeName);
   showCharacter(selectedCharacter);
@@ -41,15 +43,26 @@ namePerson.addEventListener('keyup', filterName);
 const orderFilter = (a) => {
   const orderSelec = a.target.value;
   if (orderSelec !== "") {
-    const filterOrder = filterAlfa(arrCharacters, orderSelec)
-    showCharacter(filterOrder)
+    if (filmsCharacters.value !== 'filmsCharacters') {
+      const filterOrder = filterAlfa(resultCharactersFilms, orderSelec)
+      showCharacter(filterOrder)
+    } else {
+      const filterOrder = filterAlfa(arrCharacters, orderSelec)
+      showCharacter(filterOrder)
+    }
   }
 }
 const order = document.getElementById("selecOrder")
 order.addEventListener("change", orderFilter)
 
+let resultCharactersFilms = []
 const filmsCharacters = document.getElementById("inputCharactersFilm")
 filmsCharacters.addEventListener("change", (event) => {
-  const resultCharactersFilms = filterFilmCharacters(films, event.target.value)
-  showCharacter(resultCharactersFilms)
+  resultCharactersFilms = []
+  if (filmsCharacters.value !== "filmsCharacters") {
+    resultCharactersFilms = filterFilmCharacters(films, event.target.value)
+    showCharacter(resultCharactersFilms)
+  } else {
+    showCharacter(arrCharacters)
+  }
 })
