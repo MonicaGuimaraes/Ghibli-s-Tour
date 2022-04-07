@@ -206,3 +206,7 @@ hr {
   height: 2vh;
   background-color: transparent;
 }
+@media screen and (max-width: 480px) {
+  .containerCards {
+    padding: 15px;}
+}
