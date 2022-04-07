@@ -45,7 +45,9 @@ searchFilms.addEventListener("keyup", searchMovie);
 const ordenator = (e) => {
   const orderSelec = e.target.value;
   if (orderSelec !== "") {
-    const filterOrder = filters(films, orderSelec)
+    const filterOrder = filters(films, orderSelec);
+    directorSelected.selectedIndex = 0;
+
     printCards(filterOrder)
   }
 }
@@ -61,6 +63,9 @@ orderScore.addEventListener("change", ordenator)
 const directorSelected = document.getElementById("inputDirector")
 directorSelected.addEventListener("change", (event) => {
   const resultDirector = filterDirector(films, event.target.value)
+  order.selectedIndex = 0;
+  orderAge.selectedIndex = 0;
+  orderScore.selectedIndex = 0;
   printCards(resultDirector)
 })
 
