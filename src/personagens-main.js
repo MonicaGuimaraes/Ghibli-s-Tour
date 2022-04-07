@@ -1,5 +1,5 @@
 import { navHamburguer } from './nav.js';
-import { searchCharacter, filterAlfa }
+import { searchCharacter, filterAlfa, filterFilmCharacters }
   from './data.js';
 import data from './data/ghibli/ghibli.js';
 
@@ -20,13 +20,14 @@ const peopleImage = document.getElementById('cardsCharacters');
 `).join('') )
 }
 
+const characters = data.films.map(arrPeople => arrPeople.people)
+const films = data.films
+const arrCharacters = [].concat.apply([], characters);
 const films = data.films
 
 showCharacter(films);
 
 const namePerson= document.getElementById('searchCharac');
-
-
 
 const filterName = () => {
   const typeName = namePerson.value
@@ -34,7 +35,6 @@ const filterName = () => {
   showCharacter(selectedCharacter);
 };
 namePerson.addEventListener('keyup', filterName);
-
 
 //ordem alfabética
 const orderFilter = (a) => {
@@ -45,8 +45,11 @@ const orderFilter = (a) => {
   }
 }
 
+const filmsCharacters = document.getElementById("inputCharactersFilm")
+filmsCharacters.addEventListener("change", (event) => {
+  const resultCharactersFilms = filterFilmCharacters(films, event.target.value)
+  showCharacter(resultCharactersFilms)
+})
+
 const order = document.getElementById("selecOrder")
 order.addEventListener("change", orderFilter)
-
-
-
