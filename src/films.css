@@ -71,6 +71,7 @@ main {
   background-color: var(--main);
   box-shadow: 14px 14px rgba(100, 100, 100, 0.5);
   border: solid var(--abacate);
+  border-radius: 10px;
   padding: 2rem;
   box-sizing: border-box;
   margin-bottom: 3rem;

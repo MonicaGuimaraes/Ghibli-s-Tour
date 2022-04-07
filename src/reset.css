@@ -7,12 +7,13 @@
   --lighteffect: #FFCC00;
   --shadowcolor: #d20000;
   --black: black;
-  --white: white;
+  --white: #edf5ed;
   --snow: snow;
   --main: #C3DBC2;
   --footer: #C3DBC2;
   --marrom: #753F26;
   --abacate: #EDEDAF;
+  --back: #edf5ed;
 }
 
 * {
