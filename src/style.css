@@ -257,7 +257,7 @@ h1 {
     height: 200px;
   }
 
-  ul li img{
+  ul li img {
     width: 270px;
     height: 200px;
   }
@@ -320,7 +320,7 @@ footer a {
   color: black;
 }
 
-.footerText:hover{
+.footerText:hover {
   font-weight: bold;
 }
 
