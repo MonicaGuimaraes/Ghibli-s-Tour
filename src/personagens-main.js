@@ -8,23 +8,25 @@ navHamburguer()
 const peopleImage = document.getElementById('cardsCharacters');
 function showCharacter(arrPeople) {
   peopleImage.innerHTML = arrPeople.map((item) =>
-    item.people.map((carac) => `
+    `
     <div class="card">
-      <img src= "${carac.img}" class="characterPoster">
-      <p class= "nomePersonagem"><strong>${carac.name}</strong><br></p>
-      <p class= "caracPersona"><strong>Age: </strong> ${carac.age}</p><br>
-      <p class= "caracPersona"><strong>Specie: </strong> ${carac.specie}</p><br>
-      <p class= "caracPersona"><strong>Gender: </strong> ${carac.gender}</p><br>
+      <img src= "${item.img}" class="characterPoster">
+      <p class= "nomePersonagem"><strong>${item.name}</strong><br></p>
+      <p class= "caracPersona"><strong>Age: </strong> ${item.age}</p><br>
+      <p class= "caracPersona"><strong>Specie: </strong> ${item.specie}</p><br>
+      <p class= "caracPersona"><strong>Gender: </strong> ${item.gender}</p><br>
       <p class= "caracPersona"><Strong>Film: </strong>${item.title}</p>
       </div>
-`).join(''))
+`).join('')
 }
-
-const characters = data.films.map(arrPeople => arrPeople.people)
-const arrCharacters = [].concat.apply([], characters);
 const films = data.films
+const characters = data.films.map(arrPeople => {
+  arrPeople.people.forEach(element => element['title'] = arrPeople.title)
+  return arrPeople.people
+})
 
-showCharacter(films);
+const arrCharacters = [].concat.apply([], characters);
+showCharacter(arrCharacters);
 
 const namePerson = document.getElementById('searchCharac');
 
