@@ -1,0 +1,149 @@
+@import url(reset.css);
+@import url(header.css);
+
+
+.body {
+  background-color: #003563;
+  font-family: 'Didact Gothic';
+  overflow-x: hidden;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.page-characters {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.mainPersonagens {
+  display: flex;
+  margin: auto;
+  background-color: #95bad7;
+  justify-content: center;
+  justify-items: center;
+  min-height: 70vh;
+  flex-wrap: wrap;
+}
+
+.filterCharacters {
+  color: #003563;
+  background-color: #95bad7;
+  margin: 1vmax;
+  border-radius: 5px;
+  border: 0.1max solid #003563;
+  border-color: #003563;
+  height: 2vmax;
+  font-size: 1vmax;
+  text-align: center;
+  box-shadow: inset 0 0 0.3em #003563;
+}
+
+.inputCharacters {
+  display: inline-flex;
+}
+
+.inputCharacters::placeholder {
+  color: #003563;
+  text-align: center;
+}
+
+.cardsCharacters {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 250px;
+  height: 405px;
+  box-shadow: #003563 0 0 1em;
+  background-color: #003563;
+  margin: 2% 5% 5% 2%;
+  perspective: 1000px;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.characterPoster {
+  margin-top: 2%;
+  width: 200px;
+  height: 175px;
+  border-radius: 2%;
+  border: #95bad7 solid 1px;
+}
+
+.nomePersonagem {
+  margin: 2% 0% 5% 0%;
+  font-size: 1.1vmax;
+  text-align: center;
+}
+
+.caracPersona {
+  padding: 0% 2%;
+}
+
+.top-button {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 1.0;
+}
+
+.top-button {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 1.0;
+}
+
+@media screen and (max-width: 640px) {
+
+  .carac {
+    margin: 0% 17% 0% 0%;
+
+  }
+
+  .nomePersonagem {
+    font-size: 1.5vmax;
+  }
+
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: darkgray;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #003563;
+  border-radius: 20px;
+  border: darkgray solid 1px;
+}
+
+hr {
+  width: 100vw;
+  height: 2vh;
+  background-color: transparent;
+}
+
+footer {
+  display: flex;
+  background-color: #003563;
+  text-align: center;
+  font-size: 1.2vmax;
+  justify-content: center;
+}

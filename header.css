@@ -1,0 +1,113 @@
+.headerMenu {
+  height: 90px;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  box-shadow: 1px 10px 10px var(--black);
+  background: var(--main);
+}
+
+.logoImage {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.menu {
+  display: flex;
+  gap: .5rem;
+}
+
+.menu .link {
+  display: block;
+  padding: .5rem;
+}
+
+.link:hover {
+  background: var(--line);
+}
+
+.link {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.btnMobile {
+  display: none;
+}
+
+.imgHeader {
+  height: 85px;
+  margin: 1%;
+}
+
+@media only screen and (max-width: 820px) {
+  .menu {
+    display: block;
+    position: absolute;
+    width: 50vh;
+    top: 80px;
+    right: 0;
+    background: var(--white);
+    box-shadow: -2rem 2rem 2rem var(--shadow);
+    transition: .6s;
+    height: 0px;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  .menu .link {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid var(--line);
+  }
+
+  .btnMobile {
+    display: flex;
+    padding: .5rem;
+    font-size: 1rem;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+  }
+
+  .hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  .hamburguer::after,
+  .hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+  }
+
+  .navOptions.active .hamburguer {
+    border-top-color: transparent;
+  }
+
+  .navOptions.active .hamburguer::before {
+    transform: rotate(135deg);
+
+  }
+
+  .navOptions.active .hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .navOptions.active .menu {
+    visibility: visible;
+    height: calc(90vh - 80px);
+    overflow-y: auto;
+  }
+}

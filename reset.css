@@ -1,0 +1,23 @@
+:root {
+  --header: #D63025;
+  --back: #C4C4C4;
+  --shadow: rgba(0, 0, 0, 0.527);
+  --font: rgba(0, 0, 0, .05);
+  --pattern: rgba(94, 92, 90, 0.397);
+  --lighteffect: #FFCC00;
+  --shadowcolor: #d20000;
+  --black: black;
+  --white: white;
+  --snow: snow;
+  --main: #C3DBC2;
+  --footer: #C3DBC2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
