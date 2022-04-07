@@ -9,6 +9,11 @@
   max-height: 100%;
 }
 
+.page-index {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .modal {
   position: fixed;
   background-color: #003563;
