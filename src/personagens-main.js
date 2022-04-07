@@ -1,5 +1,5 @@
 import { navHamburguer } from './nav.js';
-import { searchCharacter, filterAlfa }
+import { searchCharacter, filterAlfa, filterFilmCharacters }
   from './data.js';
 import data from './data/ghibli/ghibli.js';
 
@@ -25,6 +25,7 @@ function showCharacter(arrPeople) {
 `).join('');
 }
 const characters = data.films.map(arrPeople => arrPeople.people)
+const films = data.films
 const arrCharacters = [].concat.apply([], characters);
 
 showCharacter(arrCharacters);
@@ -46,6 +47,12 @@ const orderFilter = (a) => {
     showCharacter(filterOrder)
   }
 }
+
+const filmsCharacters = document.getElementById("inputCharactersFilm")
+filmsCharacters.addEventListener("change", (event) => {
+  const resultCharactersFilms = filterFilmCharacters(films, event.target.value)
+  showCharacter(resultCharactersFilms)
+})
 
 const order = document.getElementById("selecOrder")
 order.addEventListener("change", orderFilter)

@@ -1,5 +1,5 @@
 import { navHamburguer } from './nav.js';
-import { filterDirector, filterFilms, filters, filterFilmCharacters } from './data.js';
+import { filterDirector, filterFilms, filters } from './data.js';
 
 import data from './data/ghibli/ghibli.js';
 
@@ -64,13 +64,6 @@ directorSelected.addEventListener("change", (event) => {
   printCards(resultDirector)
 })
 
-const filmsCharacters = document.getElementById("inputCharactersFilm")
-console.log(filmsCharacters)
-filmsCharacters.addEventListener("change", (event) => {
-  console.log("vai!!")
-  const resultCharactersFilms = filterFilmCharacters(films, event.target.value)
-  printCards(resultCharactersFilms)
-})
 
 let clear = document.querySelector('.resetButton')
 clear.addEventListener('click', resetFilter, printCards)
