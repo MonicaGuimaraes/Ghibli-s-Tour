@@ -45,11 +45,9 @@ export const filterAlfa = (arrCharacters, orderSelec) => {
   }
 }
 
-
 //busca por diretor
 export const filterDirector = (films, directorSelected) => {
   return films.filter(film => film.director === directorSelected)
-
 };
 
 //personagens por filmes
@@ -62,3 +60,5 @@ export const filterFilmCharacters = (films, filmSelected) => {
   }, [])
   return result
 };
+
+
