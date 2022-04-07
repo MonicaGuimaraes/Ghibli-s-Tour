@@ -1,8 +1,9 @@
-import { searchCharacter, filterAlfa}
-from './data.js';
+import { navHamburguer } from './nav.js';
+import { searchCharacter, filterAlfa }
+  from './data.js';
 import data from './data/ghibli/ghibli.js';
 
-//print personagens
+navHamburguer()
 
 const peopleImage = document.getElementById('cardsCharacters');
   function showCharacter(arrPeople) {
@@ -29,23 +30,23 @@ const namePerson= document.getElementById('searchCharac');
 
 const filterName = () => {
   const typeName = namePerson.value
-   const selectedCharacter = searchCharacter(films, typeName);
+  const selectedCharacter = searchCharacter(arrCharacters, typeName);
   showCharacter(selectedCharacter);
 };
 namePerson.addEventListener('keyup', filterName);
 
 
 //ordem alfabética
-const orderFilter = (a)=>{
+const orderFilter = (a) => {
   const orderSelec = a.target.value;
-  if(orderSelec !== ""){
-    const filterOrder = filterAlfa(films, orderSelec)
+  if (orderSelec !== "") {
+    const filterOrder = filterAlfa(arrCharacters, orderSelec)
     showCharacter(filterOrder)
   }
 }
 
 const order = document.getElementById("selecOrder")
-order.addEventListener ("change", orderFilter)
+order.addEventListener("change", orderFilter)
 
 
 

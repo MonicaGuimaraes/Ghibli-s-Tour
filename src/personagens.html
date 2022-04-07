@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personagens</title>
-  <link rel="stylesheet" href="personagens.css"/>
+  <link rel="stylesheet" href="personagens.css" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
 </head>
 
-<body>
-  <header role="banner" class="header">
-    <nav>
-      <ul class="list">
-        <li class="content">
-          <a id="films" href="films.html">
-            Films
-          </a>
-        </li>
-        <li class="content carac">
-          <a id="characters"><a href="personagens.html">
-              Characters</a>
-          </a>
-        </li>
-        <li class="content">
-          <a id="about" href="about.html">
-            About
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <figure class="imglogo">
-      <a href="./index.html" >
-        <img src="img/logo.png" alt="image host" class="logo">
-      </a>
-    </figure>
-  </header>
+<body class="body">
   <main class="mainPersonagens">
     <input type="search" id="searchCharac" class="filterCharacters inputCharacters" placeholder="Find a character">
     <select id="selecOrder" name="filtroPersonagens" class="filterCharacters">
-      <option id= "ascend" value="a-z">A-Z</option>
-      <option id= "descending" value="z-a">Z-A</option>
+      <option id="ascend" value="a-z">A-Z</option>
+      <option id="descending" value="z-a">Z-A</option>
+    </select>
+    <select name="filterCharactersFilm" class="filterCharactersFilm" id="inputCharactersFilm">
+      <option value="filmsCharacters">Film`s Characters</option>
+      <option value="castle">Castle in the Sky</option>
+      <option value="totoro">My Neighbor Totoro</option>
+      <option value="kikis">Kiki's Delivery Service</option>
+      <option value="poppyHill">From Up on Poppy Hill</option>
+      <option value="graveFireflies">Grave of the Fireflies</option>
+      <option value="howlsMovingCastle">Howl's Moving Castle</option>
+      <option value="yamadas">My Neighbors the Yamadas</option>
+      <option value="onlyYesterday">Only Yesterday</option>
+      <option value="pomPoko">Pom Poko</option>
+      <option value="ponyo">Ponyo on the Cliff by the Sea</option>
+      <option value="monoke">Princess Mononoke</option>
+      <option value="spiritedAway">Spirited Away</option>
+      <option value="catReturns">The Cat Returns</option>
+      <option value="talesEarthsea">Tales from Earthsea</option>
+      <option value="wordlArrietty">The Secret World of Arrietty</option>
+      <option value="windRises">The Wind Rises</option>
+      <option value="princessKaguya">The Tale of the Princess Kaguya</option>
+      <option value="marnie">When Marnie Was There</option>
+      <option value="whisperHeart">Whisper of the Heart</option>
     </select>
 
     <hr>
     <sections class="cardsCharacters" id="cardsCharacters">
     </sections>
+    <a href="#top">
+      <img src="img/VOLTAR_AO_TOPO (2).png" class="top-button" alt="Button-Top" />
+    </a>
   </main>
   <hr>
   <footer>
@@ -53,4 +53,5 @@
   </footer>
   <script src="personagens-main.js" type="module"></script>
 </body>
+
 </html>

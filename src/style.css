@@ -1,73 +1,36 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
+@import url(header.css);
+@import url(reset.css);
 
-body {
+.body {
   background-color: #003563;
   font-family: 'Didact Gothic';
-  color: white;
   overflow-x: hidden;
   max-width: 100%;
   max-height: 100%;
 }
 
-header {
-  display: flex;
-  width: 98%;
-  height: 30%;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  align-items: center;
+.modal {
+  position: fixed;
+  background-color: #003563;
+  border: solid 1px white;
+  top: 10%;
+  padding: 10px;
+  opacity: 0;
 }
 
-.list{
-  display: inline-flex;
-}
-
-.content{
-  list-style-type: none;
-  margin: 2% 15%;
-}
-
-.imglogo{
-  display: end;
-
-}
-.logo{
-  display: flex;
-  justify-content: space-evenly;
-  width: auto;
-  height: 15vh;
-}
-
-a {
-  text-decoration: none;
-  font-weight: normal;
-  font-size: 2vmax;
-}
-
-a:visited {
-  color: white;
-  text-decoration: none;
-  font-weight: normal;
-}
-
-a:hover {
-  font-weight: bold;
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 main{
-  width: 100%;
   display: flex;
   flex-direction: column;
+  color: white;
   justify-content: center;
-  justify-items: center;
   align-items: center;
   text-align: center;
 }
-
 .carrosel{
   width: 800px;
   height: 450px;
@@ -103,7 +66,7 @@ main{
   100%{left: 0px}
 }
 
-img{
+ul li img{
   width: 800px;
   height: 450px;
 }
@@ -127,7 +90,7 @@ h1{
     height: 350px;
   }
 
-  img{
+  ul li img{
     width: 600px;
     height: 350px;
   }
@@ -158,7 +121,7 @@ h1{
     height: 300px;
   }
 
-  img{
+  ul li img{
     width: 470px;
     height: 300px;
   }
