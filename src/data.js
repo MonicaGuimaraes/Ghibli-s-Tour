@@ -61,4 +61,7 @@ export const filterFilmCharacters = (films, filmSelected) => {
   return result
 };
 
-
+export const percentage = (arr, filterArrLengt) => {
+  const percent = ((filterArrLengt / arr.length) * 100).toFixed([2])
+  return percent
+}
