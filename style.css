@@ -309,7 +309,7 @@ h1 {
   }
 
   footer a {
-    font-size: 1rem;
+    font-size: .8rem;
     margin-bottom: 2%;
   }
 }
@@ -332,7 +332,7 @@ footer {
   display: flex;
   background-image: linear-gradient(to bottom, #C3DBC2, #edf5ed);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.2vmax;
   justify-content: center;
   height: 5vh;
   align-items: flex-end;

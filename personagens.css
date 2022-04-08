@@ -51,7 +51,7 @@
   margin: 1vmax;
   border-radius: 5px;
   border: 0.1max solid var(--marrom);
-  height: 4vmax;
+  height: 30px;
   font-size: 2vmax;
   text-align: center;
   box-shadow: inset 0 0 0.3em var(--abacate);
@@ -131,7 +131,7 @@
 
   .filterCharacters {
     font-size: 1rem;
-    height: 4vmax;
+    height: 30px;
   }
 
   .filterCharacters::placeholder {
