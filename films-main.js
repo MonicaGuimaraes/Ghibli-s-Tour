@@ -1,5 +1,5 @@
 import { navHamburguer } from './nav.js';
-import { filterDirector, filterFilms, filters } from './data.js';
+import { filterDirector, filterFilms, filters, percentage } from './data.js';
 import data from './data/ghibli/ghibli.js';
 
 navHamburguer()
@@ -32,9 +32,18 @@ function printCards(filmes) {
 printCards(films)
 
 const searchMovie = () => {
-  const valueSelec = searchFilms.value;
-  const movieSelec = filterFilms(films, valueSelec);
-  printCards(movieSelec);
+  pPercentage.innerHTML = ""
+  if (searchFilms.value === "") {
+    printCards(films)
+  } else {
+    const valueSelec = searchFilms.value;
+    const movieSelec = filterFilms(films, valueSelec);
+    if (movieSelec.length === 0) {
+      document.getElementById('cardsFilms').textContent = '"Not found! Verify the name and try again."'
+    } else {
+      printCards(movieSelec)
+    }
+  }
 }
 
 const searchFilms = document.querySelector("#inputSearch");
@@ -59,13 +68,21 @@ orderAge.addEventListener("change", ordenator)
 const orderScore = document.getElementById("inputScore")
 orderScore.addEventListener("change", ordenator)
 
+const pPercentage = document.getElementById("pPercentage")
 const directorSelected = document.getElementById("inputDirector")
 directorSelected.addEventListener("change", (event) => {
+  pPercentage.innerHTML = ""
   const resultDirector = filterDirector(films, event.target.value)
   order.selectedIndex = 0;
   orderAge.selectedIndex = 0;
   orderScore.selectedIndex = 0;
-  printCards(resultDirector)
+  if (resultDirector.length === 0) {
+    printCards(films)
+
+  } else {
+    pPercentage.innerHTML = `Percentage of films that appear in this filter ${percentage(films, (resultDirector.length))}%`
+    printCards(resultDirector)
+  }
 })
 
 let clear = document.querySelector('.resetButton')

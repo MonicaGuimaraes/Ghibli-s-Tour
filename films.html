@@ -4,42 +4,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Lovers</title>
+  <title>Films</title>
   <link rel="stylesheet" href="films.css" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Didact+Gothic" />
 </head>
 
 <body class="body">
   <main class="mainFilms">
-    <input type="search" placeholder="Search" class="filterFilms inputFilms" id="inputSearch">
-    <select name="filtroFilms" class="filterFilms" id="inputOrder">
-      <option value="order">Order</option>
-      <option value="a-z" id="rising">A-Z</option>
-      <option value="z-a" id="falling">Z-A</option>
-    </select>
-    <select name="filterAge" class="filterFilms" id="inputAge">
-      <option value="realease">Release Date</option>
-      <option value="newest" id="optionNewest">Newest</option>
-      <option value="oldest" id="optionOldest">Oldest</option>
-    </select>
-    <select name="filterScore" class="filterFilms" id="inputScore">
-      <option value="score">Score</option>
-      <option value="lower" id="optionLower">Lower</option>
-      <option value="higher" id="optionHigher">Higher</option>
-    </select>
-    <select name="filterDirectors" class="filterDirectors filterFilms" id="inputDirector">
-      <option value="director">Director</option>
-      <option value="Gorō Miyazaki" id="gorōMiyazaki">Gorō Miyazaki</option>
-      <option value="Hayao Miyazaki" id="hayaoMiyazaki">Hayao Miyazaki</option>
-      <option value="Hiromasa Yonebayashi" id="hiromasaYonebayashi">Hiromasa Yonebayashi</option>
-      <option value="Hiroyuki Morita" id="hiroyukiMorita">Hiroyuki Morita</option>
-      <option value="Isao Takahata" id="isaoTakahata">Isao Takahata</option>
-      <option value="Yoshifumi Kondō" id="yoshifumiKondō">Yoshifumi Kondō</option>
-    </select>
-
-
-    <button type="reset" class="resetButton filterFilms" id="clearButton">Clear</button>
-
+    <section class="filterOrder">
+      <input type="search" placeholder="Search" class="filterFilms inputFilms" id="inputSearch">
+      <select name="filtroFilms" class="filterFilms" id="inputOrder">
+        <option value="order">Order</option>
+        <option value="a-z" id="rising">A-Z</option>
+        <option value="z-a" id="falling">Z-A</option>
+      </select>
+      <select name="filterAge" class="filterFilms" id="inputAge">
+        <option value="realease">Release Date</option>
+        <option value="newest" id="optionNewest">Newest</option>
+        <option value="oldest" id="optionOldest">Oldest</option>
+      </select>
+      <select name="filterScore" class="filterFilms" id="inputScore">
+        <option value="score">Score</option>
+        <option value="lower" id="optionLower">Lower</option>
+        <option value="higher" id="optionHigher">Higher</option>
+      </select>
+      <select name="filterDirectors" class="filterDirectors filterFilms" id="inputDirector">
+        <option value="director">Director</option>
+        <option value="Gorō Miyazaki" id="gorōMiyazaki">Gorō Miyazaki</option>
+        <option value="Hayao Miyazaki" id="hayaoMiyazaki">Hayao Miyazaki</option>
+        <option value="Hiromasa Yonebayashi" id="hiromasaYonebayashi">Hiromasa Yonebayashi</option>
+        <option value="Hiroyuki Morita" id="hiroyukiMorita">Hiroyuki Morita</option>
+        <option value="Isao Takahata" id="isaoTakahata">Isao Takahata</option>
+        <option value="Yoshifumi Kondō" id="yoshifumiKondō">Yoshifumi Kondō</option>
+      </select>
+      <button type="reset" class="resetButton filterFilms" id="clearButton">Clear</button>
+    </section>
+    <section class="percentage">
+      <p class="p-percentge" id="pPercentage"></p>
+    </section>
     <section class="cardsFilms" id="cardsFilms">
     </section>
     <a href="#top">

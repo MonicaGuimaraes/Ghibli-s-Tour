@@ -28,16 +28,37 @@ main {
   min-height: 78vh;
 }
 
+.filterOrder {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+}
+
+.percentage {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  height: 30px;
+  width: 100%;
+}
+
+.p-percentage {
+  height: 100%;
+}
+
+
 .filterFilms {
   display: inline-flex;
   color: var(--black);
   background-color: var(--main);
   margin: 1vmax;
-  border-radius: 0.5vmax;
+  border-radius: 5px;
   border: 0.1vmax solid var(--abacate);
-  height: 4vh;
   width: auto;
-  font-size: 1vmax;
+  height: 4vmax;
+  font-size: 2vmax;
   text-align: center;
   box-shadow: inset 0 0 0.3em var(--abacate);
 }
@@ -94,27 +115,6 @@ main {
   opacity: 1.0;
 }
 
-.Cards {
-  width: 350px;
-  height: 450px;
-  box-shadow: #003563 0 0 1em;
-  background-color: #003563;
-  margin: 2% 5% 5% 2%;
-  border-radius: 2%;
-  perspective: 1000px;
-}
-
-.cardFlip {
-  height: 350px;
-  height: 450px;
-  transform-style: preserve-3d;
-  transition: transform 0.8s;
-  position: relative;
-  border-radius: 10px;
-  display: flex;
-  width: 100%;
-}
-
 .movieDetails {
   display: flex;
   flex-direction: column;
@@ -152,9 +152,10 @@ main {
 }
 
 @media screen and (max-width: 640px) {
-  .cardsFilms{
+  .cardsFilms {
     margin: 40px;
   }
+
   .containerCards {
     margin: 2%;
     padding: 40px;
@@ -163,7 +164,7 @@ main {
     flex-direction: column;
   }
 
-  .moviePoster{
+  .moviePoster {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -179,11 +180,12 @@ main {
     width: 80%;
     left: 50px;
   }
+
   .carac {
     margin: 0% 17% 0% 0%;
   }
 
-  .movieInformation{
+  .movieInformation {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -193,7 +195,7 @@ main {
     width: 100%;
   }
 
-  .description{
+  .description {
     width: 100%;
   }
 
@@ -208,14 +210,14 @@ main {
     height: 15%;
   }
 
-  .filterFilms{
-    font-size: 0.7rem;
-    padding: 1%;
+  .filterFilms {
+    font-size: 1rem;
     height: 4vmax;
+    padding: 1%;
   }
 
-  .filterFilms::placeholder{
-    font-size: 0.7rem;
+  .filterFilms::placeholder {
+    font-size: 1rem;
   }
 }
 
@@ -238,7 +240,9 @@ hr {
   height: 2vh;
   background-color: transparent;
 }
+
 @media screen and (max-width: 480px) {
   .containerCards {
-    padding: 15px;}
+    padding: 15px;
+  }
 }

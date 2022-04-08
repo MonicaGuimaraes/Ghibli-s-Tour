@@ -1,5 +1,5 @@
 import { navHamburguer } from './nav.js';
-import { searchCharacter, filterAlfa, filterFilmCharacters }
+import { searchCharacter, filterAlfa, filterFilmCharacters, percentage }
   from './data.js';
 import data from './data/ghibli/ghibli.js';
 
@@ -25,23 +25,33 @@ const characters = data.films.map(arrPeople => {
   return arrPeople.people
 })
 
-const arrCharacters = [].concat.apply([], characters);
-showCharacter(arrCharacters);
+const arrCharacters = [].concat.apply([], characters)
+showCharacter(arrCharacters)
 
-const namePerson = document.getElementById('searchCharac');
+const namePerson = document.getElementById('searchCharac')
+const pPercentage = document.getElementById("pPercentage")
 
 const filterName = () => {
+  pPercentage.innerHTML = ""
   order.value = 'order'
   filmsCharacters.value = 'filmsCharacters'
-  const typeName = namePerson.value
-  const selectedCharacter = searchCharacter(arrCharacters, typeName);
-  showCharacter(selectedCharacter);
+  if (namePerson.value === "") {
+    showCharacter(arrCharacters)
+  } else {
+    const typeName = namePerson.value
+    const selectedCharacter = searchCharacter(arrCharacters, typeName);
+    if (selectedCharacter.length === 0) {
+      peopleImage.textContent = '"Not found! Verify the name and try again."'
+    } else {
+      showCharacter(selectedCharacter)
+    }
+  }
 };
-namePerson.addEventListener('keyup', filterName);
+namePerson.addEventListener('keyup', filterName)
 
 //ordem alfabética
 const orderFilter = (a) => {
-  const orderSelec = a.target.value;
+  const orderSelec = a.target.value
   if (orderSelec !== "") {
     if (filmsCharacters.value !== 'filmsCharacters') {
       const filterOrder = filterAlfa(resultCharactersFilms, orderSelec)
@@ -59,9 +69,11 @@ order.addEventListener("change", orderFilter)
 let resultCharactersFilms = []
 const filmsCharacters = document.getElementById("inputCharactersFilm")
 filmsCharacters.addEventListener("change", (event) => {
+  pPercentage.innerHTML = ""
   resultCharactersFilms = []
   if (filmsCharacters.value !== "filmsCharacters") {
     resultCharactersFilms = filterFilmCharacters(films, event.target.value)
+    pPercentage.innerHTML = `Percentage of characters that appear in this filter ${percentage(arrCharacters, (resultCharactersFilms.length))}%`
     showCharacter(resultCharactersFilms)
   } else {
     showCharacter(arrCharacters)
