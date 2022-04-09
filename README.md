@@ -1,5 +1,7 @@
 # Ghibli`s Tour
 
+Confira a aplicação clicando [aqui.](https://thamarabortolin.github.io/SAAP-Ghibli-s-Tour/)
+
 ## Índice
 
 - [1. O que é o projeto?](#1-o-que-é-o-projeto-?)
@@ -27,6 +29,8 @@ Este é o projeto na versão anterior:
 
 Foram realizadas pesquisas com o público-alvo da nossa aplicação. Com base nas informações extraídas, definimos as histórias de usuários.
 
+Confira a pesquisa completa com os usuários [aqui.](https://docs.google.com/document/d/12XHd6yv1xkvEV3jsMAj8usUVEU4wvXIl2sFB0yXhvOw/edit#)
+
 
 <img src= "src\img\imgReadme\historias_usuarios.png"/>
 
@@ -43,11 +47,11 @@ Foram realizadas pesquisas com o público-alvo da nossa aplicação. Com base na
 
 Página Inicial
 
-<img src= src\img\imgReadme\desktop_prototipo.png width="600"/>
+<img src="src\img\imgReadme\protótipo_alta.jpeg" width="600"/>
 
 Página de Filmes
 
-<img src= src\img\imgReadme\films_prototipo.png width="600"/>
+<img src= "src\img\imgReadme\prototipo_filmes.png"  width="600"/>
 
 <br>
 
@@ -63,3 +67,7 @@ Este projeto foi desenvolvido por:
 [Thamara Bortolin](https://github.com/ThamaraBortolin)<br>
 
 
+##
+
+
+Confira a aplicação clicando [aqui.](https://thamarabortolin.github.io/SAAP-Ghibli-s-Tour/)
