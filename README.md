@@ -117,7 +117,7 @@ ___
 
 <div align="center">
 
-  Ainda não conferiu a aplicação? Escaneie o código ou clica na imagem!
+  Ainda não conferiu a aplicação? Escaneie o código ou clique na imagem!
 
   <a  href='https://thamarabortolin.github.io/SAAP-Ghibli-s-Tour/'><img src='https://cdn.discordapp.com/attachments/972803404961304616/989326452149346325/unknown.png' align="center" alt="Aplicação"  width="200px;"></a>
 </div>
