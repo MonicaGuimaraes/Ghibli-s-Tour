@@ -94,7 +94,12 @@ ___
 
 ### Teste De Contraste
 
-<img src="https://cdn.discordapp.com/attachments/972803404961304616/989357162482520084/unknown.png"width="800">
+<img src="https://cdn.discordapp.com/attachments/972803404961304616/989357162482520084/unknown.png" width="800">
+
+
+### Apresentação do Produto
+
+Se quiser conferir a apresentação do produto é só [clicar aqui.](https://www.canva.com/design/DAFEYKy5Bcw/ZEZVGZV_TcR0fD-Bf_1CHw/view?utm_content=DAFEYKy5Bcw&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel)
 
 
 ## 6. Desenvolvedoras
