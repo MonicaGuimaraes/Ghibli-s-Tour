@@ -94,7 +94,7 @@ ___
 
 ### Teste De Contraste
 
-<img src="https://cdn.discordapp.com/attachments/972803404961304616/989357162482520084/unknown.png"width="800">
+<img src="https://cdn.discordapp.com/attachments/972803404961304616/989357162482520084/unknown.png" width="800" >
 
 
 ## 6. Desenvolvedoras
