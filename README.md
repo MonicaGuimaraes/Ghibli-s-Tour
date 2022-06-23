@@ -92,6 +92,11 @@ ___
 <img src="https://cdn.discordapp.com/attachments/972803404961304616/989350399611895858/Business_Model_Canvas.jpg" align="center" width="800">
 
 
+### Teste De Contraste
+
+<img src="https://cdn.discordapp.com/attachments/972803404961304616/989357162482520084/unknown.png"width="800">
+
+
 ## 6. Desenvolvedoras
 ___
 
