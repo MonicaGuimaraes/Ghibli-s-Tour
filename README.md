@@ -43,7 +43,7 @@ Este é o projeto na versão anterior. Nessa versão o foco era em ordenação e
 <img src ="src/img/imgReadme/projeto_anterior.gif/" width="800">
 <br>
 
-Este é o projeto na versão pós refatoramento. Como queríamos alcançar um público maior, com melhor legibilidade no site, pensando em transformar nosso app web em um site com referências, decidimos ir para uma nova atualização nos levando em direção à nova versão. Algumas animações de flip não permitiam que o usuário copiasse as informações de trás dos cartões.
+Este é o projeto na versão pós refatoramento. Como queríamos alcançar um público maior, com melhor legibilidade no site, pensando em transformar nosso app web em um site com referências, decidimos ir para uma nova atualização nos levando em direção à nova versão. Algumas animações de flip não permitiam que o usuário copiasse as informações de trás dos cartões, por isso nessa versão as retiramos.
 
 <img src ="src/img/imgReadme/projeto_atual.gif/" width="800">
 
