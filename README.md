@@ -1,6 +1,6 @@
 # Ghibli`s Tour
 <div align="center">
-  <img src="https://cdn.discordapp.com/attachments/972803404961304616/989326935739994122/unknown.png"/>
+  <img src="https://media.discordapp.net/attachments/972803404961304616/989326935739994122/unknown.png?ex=6629a482&is=66172f82&hm=a551e779ec619be62a528664f4fe350d303970240a542971fe275d6a44adb39a&=&format=webp&quality=lossless"/>
 
   Confira a aplicação clicando [aqui.](https://thamarabortolin.github.io/SAAP-Ghibli-s-Tour/)
 </div>
@@ -61,7 +61,7 @@ Confira a pesquisa completa com os usuários [aqui.](https://docs.google.com/doc
 
 <img src= "src\img\imgReadme\historias_usuarios.png" width="800"/>
 <br>
-<img src= "https://cdn.discordapp.com/attachments/972803404961304616/989326159638589461/unknown.png" width="800"/>
+<img src="https://media.discordapp.net/attachments/972803404961304616/989326159638589461/unknown.png?ex=6629a3c9&is=66172ec9&hm=70944cd7dbbd397eb9e0d6484969441bc4bd222d063469981a1bb349d6b02fe2&=&format=webp&quality=lossless&width=550&height=272" width="800"/>
 
 ## 4. Protótipos da página
 ___
@@ -96,12 +96,12 @@ ___
 ### Business Model Canvas
 
 
-<img src="https://cdn.discordapp.com/attachments/972803404961304616/989350399611895858/Business_Model_Canvas.jpg" align="center" width="800">
+<img src="https://media.discordapp.net/attachments/972803404961304616/989350399611895858/Business_Model_Canvas.jpg?ex=6629ba5c&is=6617455c&hm=35931e540d7f9d51824064566fd00bf8a8c7093814a06602af0f305de57adf03&=&format=webp&width=1244&height=686" align="center" width="800">
 
 
 ### Teste De Contraste
 
-<img src="https://cdn.discordapp.com/attachments/972803404961304616/989357162482520084/unknown.png" width="800">
+<img src="https://media.discordapp.net/attachments/972803404961304616/989357162482520084/unknown.png?ex=6629c0a8&is=66174ba8&hm=ee4cd4b4bfc8c9f1c6596bca85afeb7086c80ddf21a23b5bd5f4eb5e28f8ec07&=&format=webp&quality=lossless" width="800">
 
 
 ### Apresentação do Produto
@@ -136,6 +136,6 @@ ___
 
   Ainda não conferiu a aplicação? Escaneie o código ou clique na imagem!
 
-  <a  href='https://thamarabortolin.github.io/SAAP-Ghibli-s-Tour/'><img src='https://cdn.discordapp.com/attachments/972803404961304616/989326452149346325/unknown.png' align="center" alt="Aplicação"  width="200px;"></a>
+  <a  href='https://thamarabortolin.github.io/SAAP-Ghibli-s-Tour/'><img src="https://media.discordapp.net/attachments/972803404961304616/989326452149346325/unknown.png?ex=6629a40e&is=66172f0e&hm=aad3ad957b1726e61065e3d77a2b31b70220992920752f16c535b9a4b694385a&=&format=webp&quality=lossless" align="center" alt="Aplicação"  width="200px;"></a>
 </div>
 
