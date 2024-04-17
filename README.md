@@ -90,7 +90,7 @@ ___
 ### Logo
 
 
-<img src="https://cdn.discordapp.com/attachments/972803404961304616/989326935739994122/unknown.png"/>
+<img src="https://media.discordapp.net/attachments/972803404961304616/989326935739994122/unknown.png?ex=6629a482&is=66172f82&hm=a551e779ec619be62a528664f4fe350d303970240a542971fe275d6a44adb39a&=&format=webp&quality=lossless"/>
 
 
 ### Business Model Canvas
